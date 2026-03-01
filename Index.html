@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <title>FF Mod Menu</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="panel">
+    <h1>FF MOD MENU</h1>
+
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('aim')">Aimbot</button>
+      <button class="tab" onclick="switchTab('vis')">Visual</button>
+      <button class="tab" onclick="switchTab('misc')">Misc</button>
+    </div>
+
+    <!-- ABA AIMBOT -->
+    <div id="aim" class="content active">
+      <label class="switch">
+        <input type="checkbox" id="aimEnable" checked>
+        <span>Aimbot Ativo</span>
+      </label>
+      <label>FOV <input type="range" id="aimFov" min="1" max="360" value="90"></label>
+      <label>Smooth <input type="range" id="aimSmooth" min="0" max="100" value="20"></label>
+      <label class="switch">
+        <input type="checkbox" id="norecoil" checked>
+        <span>NoRecoil</span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="fullLock">
+        <span>Full Lock (2x)</span>
+      </label>
+    </div>
+
+    <!-- ABA VISUAL -->
+    <div id="vis" class="content">
+      <label class="switch">
+        <input type="checkbox" id="esp">
+        <span>ESP Caixas</span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="espLine">
+        <span>ESP Linhas</span>
+      </label>
+      <label>Cor ESP <input type="color" id="espColor" value="#00ff73"></label>
+    </div>
+
+    <!-- ABA MISC -->
+    <div id="misc" class="content">
+      <button id="launchBtn" class="big">INJETAR & ABRIR FF</button>
+      <p id="status"></p>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
