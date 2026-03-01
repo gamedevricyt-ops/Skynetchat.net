@@ -1,0 +1,15 @@
+* { box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { margin: 0; height: 100vh; background: #0d0d0d url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Crect width='30' height='30' fill='%230d0d0d'/%3E%3Ctext x='2' y='20' fill='%231a1a1a' font-size='20'%3E◦%3C/text%3E%3C/svg%3E"); display:flex; align-items:center; justify-content:center;}
+.panel { width: 320px; background: #111; border: 1px solid #00ff73; border-radius:8px; padding: 1rem; }
+h1 { color:#00ff73; font-size:1.3rem; text-align:center; margin:0 0 1rem;}
+.tabs { display:flex; gap:.3rem; margin-bottom:1rem;}
+.tab { flex:1; background:#191919; color:#aaa; border:1px solid #333; border-radius:4px; padding:.4rem 0; cursor:pointer;}
+.tab.active { background:#00ff73; color:#000; font-weight:bold;}
+.content { display:none; flex-direction:column; gap:.7rem;}
+.content.active { display:flex;}
+.switch { display:flex; align-items:center; gap:.5rem; color:#fff;}
+.switch input{ accent-color:#00ff73;}
+label{ color:#ccc; font-size:.9rem;}
+input[type="range"]{ width:100%;}
+.big{ width:100%; background:#00ff73; border:0; color:#000; font-size:1rem; font-weight:bold; padding:.7rem 0; border-radius:4px; cursor:pointer;}
+#status{ color:#fff; font-size:.8rem; text-align:center;}
